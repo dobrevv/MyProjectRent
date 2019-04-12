@@ -1,7 +1,90 @@
-h1 {
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  color: #879db2;
+  line-height: 1.25em;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  float: left;
+  width: 120px;
+  height: 90px;
+  background-color: green;
+  margin-left: 50px;
+  text-align: center;
+  margin-right: 9%;
+}
+
+.mainNavi {
+  float: left;
+  margin-right: 30%;
+}
+.mainNavi ul {
+  margin: 0;
+  padding: 0;
+}
+.mainNavi ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+}
+.mainNavi ul li a {
   display: block;
-  border: 1px solid green;
-  color: green;
+  padding: 37px 21%;
+  font-size: 1em;
+  color: #3d5974;
+  background-color: transparent;
+  font-weight: 400;
+  width: max-content;
+}
+.mainNavi ul:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.rentNow {
+  float: left;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.rentNow a {
+  display: block;
+  padding: 11px 70%;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #0988ff;
+  background: transparent;
+  border: 1px solid #0988ff;
+  border-radius: 4px;
+  width: max-content;
+}
+
+.sliderText {
+  width: 55%;
+}
+.sliderText .jc-animation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sliderText .jc-animation p {
+  font-size: 3em;
+}
+
+.clearfix {
+  clear: both;
 }
 
 /*# sourceMappingURL=style.css.map */
