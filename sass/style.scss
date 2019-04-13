@@ -73,18 +73,130 @@ a{
   }
 
 }
+.homeMain{
+  padding: 7% 0;
+}
+.containerSlider{
+  margin: 0 0 100px 0;
+}
 .sliderText {
-  width: 55%;
-
+  float: left;
+  width: 40%;
+  margin: 0 10% 0 10%;
+  padding: 6% 0;
+  .jc-slider{
+    margin: 0;
+    padding: 0;
+  }
   .jc-animation {
     margin: 0;
     padding: 0;
     list-style: none;
     p {
       font-size: 3em;
+      font-weight: 100;
     }
   }
 }
 .clearfix{
   clear: both;
+}
+.picHolder{
+  float: left;
+  width: 37%;
+  img{
+    width: 100%;
+  }
+}
+
+
+.mainContactForm{
+  width: 77%;
+  margin: 0 auto;
+  box-shadow: 0 5px 30px 7px rgba(9, 136, 255, 0.1);
+  padding: 4% 4.5%;
+.containerSelectors {
+  margin: 0 0 60px 0;
+
+  .selectors {
+    float: left;
+    width: 30%;
+    margin: 0 3% 0 0;
+    span {
+      display: block;
+      font-size: 0.8em;
+      font-weight: 500;
+      color: #0988ff;
+      text-transform: uppercase;
+      margin: 0 0 8px;
+    }
+    .selectDate {
+      width: 100%;
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid #eef5fb;
+      font-size: 25px;
+      color: #3d5974;
+      height: 47px;
+      font-weight: 300;
+    }
+    .selectCar {
+      width: 100%;
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid #eef5fb;
+      font-size: 25px;
+      color: #3d5974;
+      height: 47px;
+      font-weight: 300;
+    }
+  }
+}
+  .containerPrice{
+    width: 67%;
+    padding: 10px 0;
+    .price{
+      float: right;
+    }
+    span{
+      font-size: 0.8em;
+      font-weight: 500;
+      color: #0988ff;
+      text-transform: uppercase;
+      display: inline-block;
+      padding-right: 10px;
+      margin: 0 0 20px;
+
+    }
+    span:after{
+      display: block;
+      content: '';
+      clear: both;
+    }
+    .range{
+      width: 100%;
+    }
+  }
+  .buttonSearch{
+    float: right;
+    width: 30%;
+    line-height: 40px;
+    padding: 10px 0;
+    text-align: center;
+    a {
+      display: block;
+      background-color: #0988ff;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      padding: 12px 3.5%;
+      font-weight: 500;
+      font-size: 0.9em;
+      border-radius: 7px;
+      transition: 0.5s cubic-bezier(0.25, 0.1, 0.67, 0.97);
+    }
+  }
+}
+.buttonSearch:hover a{
+  background: #3d5974;
+  color: #FFFFFF;
 }

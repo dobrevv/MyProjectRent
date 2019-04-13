@@ -6,8 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/freshslider.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,700&amp;subset=cyrillic" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jcslider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
 
@@ -30,21 +30,60 @@
                 <div class="clearfix"></div>
              </header>
             <main class="homeMain">
-                <div class="sliderText">
-                    <ul class="jc-slider">
-                        <li class="jc-animation">
-                            <p>Тук е</p>
-                            <p>лесно за вас</p>
-                            <p>да вземете автомобил под наем</p>
-                        </li>
-                    </ul>
+                <div class="containerSlider">
+                    <div class="sliderText">
+                        <ul class="jc-slider">
+                            <li class="jc-animation">
+                                <p>Наемете кола</p>
+                                <p>по най-лесният начин</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="picHolder">
+                        <img src="img/test.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
+                <form class="mainContactForm">
+                    <div class="containerSelectors">
+                        <div class="selectors">
+                            <span>Car type</span>
+                            <select class="selectCar" name="carType" id="car" title="car">
+                                <option value="car" style="opacity: 0.5">Car Type</option>
+                                <option value="ford">Frod Focus</option>
+                                <option value="citroen">Citroen</option>
+                                <option value="bmw">BMW</option>
+                                <option value="peugeot">Peugeot</option>
+                                <option value="reno">Reno</option>
+                            </select>
+                        </div>
+                        <div class="selectors">
+                            <span>Pick up</span>
+                            <input type="date" class="selectDate" id="datepicker">
+                        </div>
+                        <div class="selectors">
+                            <span>Drop off</span>
+                            <input type="date" class="selectDate">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="buttonSearch">
+                        <a href="#">Search now</a>
+                    </div>
+                    <div class="containerPrice">
+                        <span>Цена:</span>
+                        <span class="price">15 - 100лв.</span>
+                        <div id="moneyRange" class="range" ></div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </form>
             </main>
 
 
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-
+        <script src="js/freshslider.min.js"></script>
         <script src="js/jquery.jcslider.js"></script>
         <script src="js/main.js"></script>
     </body>
