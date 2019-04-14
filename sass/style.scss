@@ -152,13 +152,16 @@ a{
     }
   }
 }
-  .containerPrice{
+  .containerPrice {
     width: 67%;
     padding: 10px 0;
-    .price{
+
+
+    .price {
       float: right;
+
     }
-    span{
+    p{
       font-size: 0.8em;
       font-weight: 500;
       color: #0988ff;
@@ -168,13 +171,17 @@ a{
       margin: 0 0 20px;
 
     }
-    span:after{
+    p:after {
       display: block;
       content: '';
       clear: both;
     }
-    .range{
+    .range {
       width: 100%;
+
+    }
+    .ui-slider .ui-slider-range{
+      background-color: #0988ff;
     }
   }
   .buttonSearch{
@@ -199,4 +206,27 @@ a{
 .buttonSearch:hover a{
   background: #3d5974;
   color: #FFFFFF;
+}
+
+.howToRent{
+  padding: 8% 0 0 0 ;
+  .titleHow{
+    text-align: center;
+    color: #3d5974;
+    font-size: 3.2em;
+    font-weight: 300;
+  }
+  .stepsText{
+    text-align: center;
+    color: #0988ff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8em;
+
+  }
+
+}
+
+.containerIcon{
+  float: left;
 }

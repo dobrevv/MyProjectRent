@@ -160,7 +160,7 @@ a {
 .mainContactForm .containerPrice .price {
   float: right;
 }
-.mainContactForm .containerPrice span {
+.mainContactForm .containerPrice p {
   font-size: 0.8em;
   font-weight: 500;
   color: #0988ff;
@@ -169,13 +169,16 @@ a {
   padding-right: 10px;
   margin: 0 0 20px;
 }
-.mainContactForm .containerPrice span:after {
+.mainContactForm .containerPrice p:after {
   display: block;
   content: "";
   clear: both;
 }
 .mainContactForm .containerPrice .range {
   width: 100%;
+}
+.mainContactForm .containerPrice .ui-slider .ui-slider-range {
+  background-color: #0988ff;
 }
 .mainContactForm .buttonSearch {
   float: right;
@@ -199,6 +202,27 @@ a {
 .buttonSearch:hover a {
   background: #3d5974;
   color: #FFFFFF;
+}
+
+.howToRent {
+  padding: 8% 0 0 0;
+}
+.howToRent .titleHow {
+  text-align: center;
+  color: #3d5974;
+  font-size: 3.2em;
+  font-weight: 300;
+}
+.howToRent .stepsText {
+  text-align: center;
+  color: #0988ff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+.containerIcon {
+  float: left;
 }
 
 /*# sourceMappingURL=style.css.map */
