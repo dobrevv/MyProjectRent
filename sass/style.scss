@@ -229,4 +229,15 @@ a{
 
 .containerIcon{
   float: left;
+  background: red;
+  width: 31%;
+  height: 200px;
+  margin-left: 2%;
+  .iconHolder{
+    width: 20%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    text-align: center;
+  }
+
 }
