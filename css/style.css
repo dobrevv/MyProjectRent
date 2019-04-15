@@ -225,7 +225,6 @@ a {
 .containerIcon {
   float: left;
   width: 31%;
-  height: 200px;
   margin-left: 2%;
 }
 .containerIcon .iconHolder {
@@ -242,6 +241,18 @@ a {
 }
 .containerIcon .iconHolder .fa-wpforms {
   margin-top: 85px;
+}
+.containerIcon .infoContainer h3 {
+  color: #3d5974;
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.containerIcon .infoContainer p {
+  width: 70%;
+  margin: auto;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
