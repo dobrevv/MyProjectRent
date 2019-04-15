@@ -28,6 +28,9 @@ a{
 .mainNavi{
   float: left;
   margin-right: 30%;
+  .selected{
+    color: #0988ff;
+  }
   ul{
     margin: 0;
     padding: 0;
@@ -52,6 +55,10 @@ a{
     display: block;
     content: '';
     clear: both;
+  }
+  a:hover{
+    color: #0988ff;
+    background-color: transparent;
   }
 }
 .rentNow{
