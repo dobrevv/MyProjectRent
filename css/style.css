@@ -29,9 +29,6 @@ a {
   float: left;
   margin-right: 30%;
 }
-.mainNavi .selected {
-  color: #0988ff;
-}
 .mainNavi ul {
   margin: 0;
   padding: 0;
@@ -76,6 +73,11 @@ a {
   border: 1px solid #0988ff;
   border-radius: 4px;
   width: max-content;
+}
+.rentNow a:hover {
+  background: #0988ff;
+  color: #FFFFFF;
+  border-color: transparent;
 }
 
 .homeMain {
