@@ -34,6 +34,7 @@ a {
   padding: 0;
 }
 .mainNavi ul li {
+  display: block;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -41,12 +42,11 @@ a {
 }
 .mainNavi ul li a {
   display: block;
-  padding: 37px 21%;
+  padding: 37px 16px;
   font-size: 1em;
   color: #3d5974;
   background-color: transparent;
   font-weight: 400;
-  width: max-content;
 }
 .mainNavi ul:after {
   display: block;
@@ -65,14 +65,13 @@ a {
 }
 .rentNow a {
   display: block;
-  padding: 11px 70%;
+  padding: 11px 40px;
   font-size: 0.8em;
   font-weight: 500;
   color: #0988ff;
   background: transparent;
   border: 1px solid #0988ff;
   border-radius: 4px;
-  width: max-content;
 }
 .rentNow a:hover {
   background: #0988ff;
@@ -120,21 +119,26 @@ a {
   width: 100%;
 }
 
-.mainContactForm {
+.bgColorForm {
+  position: relative;
+  z-index: 9;
+}
+.bgColorForm .mainContactForm {
   width: 77%;
   margin: 0 auto;
   box-shadow: 0 5px 30px 7px rgba(9, 136, 255, 0.1);
   padding: 4% 4.5%;
+  background-color: #FFFFFF;
 }
-.mainContactForm .containerSelectors {
+.bgColorForm .mainContactForm .containerSelectors {
   margin: 0 0 60px 0;
 }
-.mainContactForm .containerSelectors .selectors {
+.bgColorForm .mainContactForm .containerSelectors .selectors {
   float: left;
   width: 30%;
   margin: 0 3% 0 0;
 }
-.mainContactForm .containerSelectors .selectors span {
+.bgColorForm .mainContactForm .containerSelectors .selectors span {
   display: block;
   font-size: 0.8em;
   font-weight: 500;
@@ -142,7 +146,7 @@ a {
   text-transform: uppercase;
   margin: 0 0 8px;
 }
-.mainContactForm .containerSelectors .selectors .selectDate {
+.bgColorForm .mainContactForm .containerSelectors .selectors .selectDate {
   width: 100%;
   border: none;
   background: transparent;
@@ -152,7 +156,7 @@ a {
   height: 47px;
   font-weight: 300;
 }
-.mainContactForm .containerSelectors .selectors .selectCar {
+.bgColorForm .mainContactForm .containerSelectors .selectors .selectCar {
   width: 100%;
   border: none;
   background: transparent;
@@ -162,14 +166,14 @@ a {
   height: 47px;
   font-weight: 300;
 }
-.mainContactForm .containerPrice {
+.bgColorForm .mainContactForm .containerPrice {
   width: 67%;
   padding: 10px 0;
 }
-.mainContactForm .containerPrice .price {
+.bgColorForm .mainContactForm .containerPrice .price {
   float: right;
 }
-.mainContactForm .containerPrice p {
+.bgColorForm .mainContactForm .containerPrice p {
   font-size: 0.8em;
   font-weight: 500;
   color: #0988ff;
@@ -178,25 +182,25 @@ a {
   padding-right: 10px;
   margin: 0 0 20px;
 }
-.mainContactForm .containerPrice p:after {
+.bgColorForm .mainContactForm .containerPrice p:after {
   display: block;
   content: "";
   clear: both;
 }
-.mainContactForm .containerPrice .range {
+.bgColorForm .mainContactForm .containerPrice .range {
   width: 100%;
 }
-.mainContactForm .containerPrice .ui-slider .ui-slider-range {
+.bgColorForm .mainContactForm .containerPrice .ui-slider .ui-slider-range {
   background-color: #0988ff;
 }
-.mainContactForm .buttonSearch {
+.bgColorForm .mainContactForm .buttonSearch {
   float: right;
   width: 31%;
   line-height: 40px;
   padding: 10px 0;
   text-align: center;
 }
-.mainContactForm .buttonSearch a {
+.bgColorForm .mainContactForm .buttonSearch a {
   display: block;
   background-color: #0988ff;
   color: #FFFFFF;
@@ -207,22 +211,35 @@ a {
   border-radius: 7px;
   transition: 0.5s cubic-bezier(0.25, 0.1, 0.67, 0.97);
 }
-
-.buttonSearch:hover a {
+.bgColorForm .buttonSearch:hover a {
   background: #3d5974;
   color: #FFFFFF;
 }
 
-.howToRent {
+.bgColorForm:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #eef5fb;
+}
+
+.backgroundIcon {
+  background-color: #eef5fb;
+}
+.backgroundIcon .howToRent {
   padding: 8% 0 0 0;
 }
-.howToRent .titleHow {
+.backgroundIcon .howToRent .titleHow {
   text-align: center;
   color: #3d5974;
   font-size: 3.2em;
   font-weight: 300;
 }
-.howToRent .stepsText {
+.backgroundIcon .howToRent .stepsText {
   text-align: center;
   color: #0988ff;
   text-transform: uppercase;
@@ -230,17 +247,16 @@ a {
   font-size: 0.8em;
   margin: 0 0 25px 0;
 }
-
-.containerIcon {
+.backgroundIcon .containerIcon {
   float: left;
   width: 31%;
   margin-left: 2%;
 }
-.containerIcon .iconHolder {
+.backgroundIcon .containerIcon .iconHolder {
   margin: 0 auto;
   text-align: center;
 }
-.containerIcon .iconHolder i {
+.backgroundIcon .containerIcon .iconHolder i {
   border-radius: 100%;
   background-color: #fff;
   padding: 6.5%;
@@ -248,20 +264,43 @@ a {
   color: #3d5974;
   box-shadow: 0 3px 20px 2px rgba(9, 136, 255, 0.1);
 }
-.containerIcon .iconHolder .fa-wpforms {
+.backgroundIcon .containerIcon .iconHolder .fa-wpforms {
   margin-top: 85px;
 }
-.containerIcon .infoContainer h3 {
+.backgroundIcon .containerIcon .infoContainer h3 {
   color: #3d5974;
   font-size: 1em;
   font-weight: 500;
   margin-bottom: 20px;
   text-align: center;
 }
-.containerIcon .infoContainer p {
+.backgroundIcon .containerIcon .infoContainer p {
   width: 70%;
   margin: auto;
   text-align: center;
+}
+
+.containerAbout {
+  width: 100%;
+  background-color: red;
+}
+.containerAbout .textAbout {
+  width: 30.3%;
+  float: left;
+  background-color: #0988ff;
+  margin: 0 1.5% 0 1.5%;
+}
+.containerAbout .textAbout .aboutContent {
+  float: left;
+  width: 70%;
+  margin-left: 60px;
+}
+.containerAbout .textAbout i {
+  float: left;
+  font-size: 2em;
+}
+.containerAbout .iconAbout {
+  display: inline;
 }
 
 /*# sourceMappingURL=style.css.map */
