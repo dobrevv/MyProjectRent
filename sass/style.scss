@@ -240,7 +240,8 @@ a{
 }
 .backgroundIcon {
   background-color: #eef5fb;
-
+  padding: 2%;
+  margin: 0 0 110px 0;
   .howToRent {
 
     padding: 8% 0 0 0;
@@ -299,29 +300,116 @@ a{
   }
 }
 .containerAbout{
-  width:100%;
-  background-color: red;
-
+  padding:1%;
   .textAbout{
     width: 30.3%;
     float: left;
-    background-color: #0988ff;
-    margin: 0 1.5% 0 1.5%;
+    margin: 0 3% 30px 1.5%;
+
     .aboutContent{
       float: left;
       width: 70%;
-      margin-left: 60px;
     }
     i{
 
       float: left;
-
       font-size: 2em;
+      margin: 0 5% 0;
+
     }
+
+    h3{
+      margin:0;
+    }
+
   }
   .iconAbout{
     display: inline;
 
   }
+  .textAbout:hover i{
+    display: inline-block;
+    animation: rotation 0.8s ;
 
+  }
+  .textAbout:nth-child(4n+3){
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @keyframes rotation {
+      49%{
+        transform: rotateY(90deg);
+      }
+        50%{
+          opacity: 0.5;
+          transform: rotateY(180deg);
+        }
+      100%{
+        opacity: 1;
+
+      }
+    }
+
+
+}
+.mainAboutUs {
+
+  .containerImg {
+    float: left;
+    height: auto;
+    img{
+      border-radius: 10px;
+    }
+  }
+
+  .contentAboutUs {
+    float: left;
+    width:50%;
+    .aboutUsText {
+      padding: 12%;
+      text-align: center;
+      background-color: #FFFFFF;
+      box-shadow: 0 5px 30px 7px rgba(9, 136, 255, 0.1);
+      border-radius: 10px;
+      .titleAboutUs {
+        color: #3d5974;
+        margin: 0 0 40px 0;
+        h3 {
+          font-size: 2.1em;
+          font-weight: 300;
+          margin: 0;
+          line-height: 1.5em;
+        }
+      }
+      p {
+        margin: 0 auto;
+        width: 80%;
+        line-height: 2.5em;
+      }
+    }
+    .btnAboutUs{
+      display: inline-block;
+      padding: 11px 40px;
+      font-size: 1em;
+      font-weight: 500;
+      border-radius: 4px;
+      margin-top: 30px;
+      background-color: #eef5fb;
+      color: #3d5974;
+      text-transform: uppercase;
+      transition: 0.8s ease;
+    }
+    .btnAboutUs:hover{
+      background-color: #0988ff;
+      color: #FFFFFF;
+    }
+  }
+}
+.titleAboutUs:after{
+  content: '';
+  display: block;
+  border-bottom: 4px solid #0988ff;
+  width:30%;
+  margin: 15px auto;
 }
