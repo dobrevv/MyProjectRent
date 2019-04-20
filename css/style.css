@@ -282,8 +282,15 @@ a {
   text-align: center;
 }
 
+.subTitle h2 {
+  color: #3d5974;
+  text-align: center;
+  margin: 0 0 90px 0;
+}
+
 .containerAbout {
   padding: 1%;
+  margin: 0 0 110px 0;
 }
 .containerAbout .textAbout {
   width: 30.3%;
@@ -326,19 +333,30 @@ a {
   }
 }
 
+footer {
+  background-color: red;
+}
+
+.mainAboutUs {
+  position: relative;
+}
 .mainAboutUs .containerImg {
-  float: left;
-  height: auto;
+  position: absolute;
+  width: 50%;
+  top: -40px;
+  left: 45%;
+  z-index: -1;
 }
 .mainAboutUs .containerImg img {
   border-radius: 10px;
+  width: 100%;
 }
 .mainAboutUs .contentAboutUs {
-  float: left;
   width: 50%;
+  margin: 0 0 0 7%;
 }
 .mainAboutUs .contentAboutUs .aboutUsText {
-  padding: 12%;
+  padding: 9%;
   text-align: center;
   background-color: #FFFFFF;
   box-shadow: 0 5px 30px 7px rgba(9, 136, 255, 0.1);
@@ -382,6 +400,13 @@ a {
   border-bottom: 4px solid #0988ff;
   width: 30%;
   margin: 15px auto;
+}
+
+.clients h3 {
+  font-size: 42px;
+  font-weight: 300;
+  z-index: 9;
+  color: #3d5974;
 }
 
 /*# sourceMappingURL=style.css.map */
