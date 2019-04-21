@@ -308,7 +308,7 @@ a{
 }
 .containerAbout{
   padding:1%;
-  margin:0 0 110px 0;
+  margin:0 0 90px 0;
   .textAbout{
     width: 30.3%;
     float: left;
@@ -365,23 +365,30 @@ footer{
   background-color: red;
 }
 .mainAboutUs {
-  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  padding: 6% 0;
   .containerImg {
-    position: absolute;
+    position: relative;
     width: 50%;
-    top: -40px;
-    left: 45%;
-    z-index: -1;
+    top: -20px;
+    right: 5%;
+    transition: 1s ease-in-out;
     img{
       border-radius: 10px;
       width: 100%;
 
     }
   }
+  .containerImg:hover{
+    transform: scale(1.1);
+  }
 
   .contentAboutUs {
-    width:50%;
+    position: relative;
+    width: 50%;
     margin: 0 0 0 7%;
+    z-index: 1;
     .aboutUsText {
       padding: 9%;
       text-align: center;
